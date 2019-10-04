@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Recipe List";
+}
+
+
+
+<div>
+
+
+    <h3 style="color:blueviolet">We've gathered all of the most loved, highest rated dinner recipes in our Taste of Home collection. It’s the best of the best!</h3>
+
+    <table cellspacing="20" ;>
+        <tr>
+            <td>
+                <img alt="Picture of Tuna Patties" src="~/Images/tuna.jpg" style="margin:10px; width: 250px; height: 260px" ; />
+            </td>
+            <td>
+                <h3 style="color:black">Easy Tuna Patties</h3>
+                <h4>
+                    <font color="black"> by:Phyllis Spencer Brixey</font><br/><br/>
+                    "These patties are great dipped in ketchup, mustard, or hot sauce.
+                    They are also great as a sandwich."<br />
+                </h4>
+                <p><a asp-action="ViewRecipe"><font color="blue">Click here for details</font></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="Picture of Brown Suagr Waffle" src="~/Images/Waffle.png" style="margin:10px; width: 250px; height: 260px" />
+            </td>
+            <td>
+                <h3 style="color:black">Brown Sugar Bacon Waffle</h3>
+                <h4>
+                    <font color="black">Recipe by:Alisan</font><br /><br />
+                    "These are perfect for those lazy weekend mornings when you have time to wake up late
+                    and still have time to cook breakfast! They are deliciously irresistible."<br />
+                </h4>
+                <p><a asp-action="ViewRecipe"><font color="blue">Click here for details</font></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="Picture of Steak and Gravy" src="~/Images/Steak.jpg" style="margin:10px; width: 250px; height: 260px" />
+            </td>
+            <td>
+                <h3 style="color:black">Steak and Gravy</h3>
+                <h4>
+                    <font color="black">Recipe by:Elisa Gale</font><br><br /><br />
+                    "Try this one on for size if you love shrooms, otherwise omit them.
+                    This is my husband's favorite (and we eat them at least 3 nights a week).
+                    Serve with rice or mashed potatoes, and green beans. Now THIS is good eatin'!"<br />
+                </h4>
+                <p><a asp-action="ViewRecipe"><font color="blue">Click here for details</font></a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="Rain Forest Chicken Pasta" src="~/Images/ChickenPasta.jpg" style="margin:10px; width: 250px; height: 260px" />
+            </td>
+            <td>
+                <h3 style="color:black">Rain Forest Chicken Pasta</h3>
+                <h4>
+                    <font color="black"> Recipe by:Kristin</font><br /><br />
+                    Easy and delicious pasta with chicken. Serve with crusty bread and salad for a quick dinner.
+                    Use as much or as little pesto sauce as you like.
+                    Using homemade pesto will taste even better, but it adds to prep time. Enjoy!<br />
+                </h4>
+                <p><a asp-action="ViewRecipe"><font color="blue">Click here for details</font></a></p>
+            </td>
+        </tr>
+    </table>
+    <a asp-action="ReviewRecipe"><h4 style="text-align:center; color:darkblue">Feedback Here</h4></a>
+    <a asp-action="AddRecipe"><h4 style="text-align:center; color:darkblue">Add your own recipe and get free membership!!!</h4></a><br>
+    <p><h5 style="text-align:center; color:darkblue">Click <a asp-action="Index">here</a> to go back to Home Page</h5></p>
+</div>
